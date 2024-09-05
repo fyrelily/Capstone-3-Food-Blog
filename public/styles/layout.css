@@ -1,0 +1,177 @@
+/* Layout Rules: Divide the page into sections. Layouts hold one or more module together.*/
+* {
+    box-sizing: border-box;
+  }
+
+.navbar{
+    display:flex;
+    width:100%;
+    align-items: center;
+    padding:20px 0 20px 50px;
+}
+
+.navLogo{
+    display:flex;
+    width:60%;
+
+}
+
+.navitems{
+    display:flex;
+    width: 100%;
+    margin-left: auto;
+    justify-content: space-evenly;
+}
+
+.c-main-hero, .c-blog, .c-new-post{
+    display: flex;
+    height: 80vh;
+    width:100%;
+    align-items:center;
+}
+
+.i-hero{
+    color: white;
+    height:100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.c-left-hero {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+
+.c-center-hero{
+    background-color: aliceblue;
+    flex-basis: 35%;
+}
+
+.c-right-hero{
+    flex-basis: 15%;
+}
+
+
+.c-center-hero{
+    background-image: url("/images/milk-and-cookies-ve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 80%;
+
+}
+
+.c-left-hero, .c-right-hero{
+    background-image: url("/images/black-marble.jpg");
+    object-fit: cover;  
+}
+
+.i-upload-img, .i-recipe-form, .i-new-recipe{
+    height: 100%;
+    align-self: flex-start;
+}
+
+.c-recipe-form, .c-new-recipe{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 35px;
+}
+
+.c-new-recipe {
+    padding:20px 100px;
+}
+
+.recipeName{
+    margin-bottom: 40px; 
+} 
+
+.description {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.i-recipe-form, .i-new-recipe{
+    flex-basis:70%;
+}
+
+.i-recipe-form input[type=text]{
+    padding:5px;
+    margin: 5px 0 22px 0;
+    border:none;
+}
+
+.c-recipe-stats{
+    display: flex;
+    margin-right:50%;
+    max-width: 50%;
+    justify-content: space-evenly;
+    border: 3px solid #D8A25E;
+    border-radius: 20px;
+}
+
+.stat-header{
+    padding: 10px 0 5px 0;
+}
+
+.i-recipe-stats{
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.i-recipe-stats p{
+    margin:2px;
+}
+
+li {
+ letter-spacing: 1px;
+}
+
+ol li{
+    margin-bottom: 50px;
+}
+
+ul li {
+    line-height: 1.5;
+}
+
+#recipeName {
+    width:60%;
+}
+
+#servings{
+    width:20%;
+}
+
+.ingredients, .instructions{
+    display: block;
+}
+
+
+.c-upload-img{
+    display: flex;
+    height: 100%;
+   flex-basis:30%;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.i-uploaded-image{
+    height: 100%;
+    justify-self: center;
+    
+}
+
+.i-uploaded-image > img{
+
+    max-width: 100%; 
+    border-radius: 5%;
+    object-fit: contain;
+}

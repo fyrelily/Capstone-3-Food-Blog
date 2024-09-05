@@ -1,0 +1,79 @@
+<%-include("partials/header.ejs")%>
+
+
+<div class="c-new-post">
+
+    <div class="c-upload-img i-upload-img">
+        <div class="i-img-form">
+            <!-- <input type="file" name="image-upload" value="Upload Image"> -->
+        </div>
+
+
+        <div class="i-uploaded-image">
+            <img src="images/tiramasu-559179-1854652.jpg" />
+        </div>
+    </div>
+    
+    <div class="c-recipe-form i-recipe-form">
+        <form action="/newRecipe" method="POST">
+            <div>
+
+
+                <input id="recipeName" type="text" name="recipeName" placeholder="Recipe Name">
+
+                <input id="description" type="text" name="description" placeholder="Recipe Name">
+
+                <input id="servings" type="text" name="servings" placeholder="Number of servings"><br/>
+
+                <input id="prepTime" type="text" name="prepTime" placeholder="Preparation Time">
+
+                <input id="cookTime" type="text" name="cookTime" placeholder="Cooking Time">
+                <br/>
+
+
+                <input type="radio" id="beginner" name="difficulty" value="Beginner" checked="checked">
+                <label for="beginner">Beginner</label>
+                
+                <input type="radio" id="intermediate" name="difficulty" value="Intermediate">
+                <label for="intermediate">Intermediate</label>
+
+                <input type="radio" id="advanced" name="difficulty" value="Advanced">
+                <label for="advanced">Advanced</label>
+            </div>
+
+            <div id="ingredients-list">
+                <input id="ingredTemplate" class="ingredients" type="text" name="ingredients" placeholder="Ingredient and Amount">
+             </div>
+             <div>
+                <input type="button" id="more-ingredients" value="Add More">
+            </div>
+
+
+
+
+
+            <div id="cooking-steps">
+             <input id="instruct-template" class="instructions" type="text" name="instructions" placeholder="Cooking instructions">
+            </div>
+            <div>
+                <input type="button" id="more-instructions" value="Add More">
+            </div>
+
+            <input type="submit" value="Post Recipe">
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer.ejs")%>

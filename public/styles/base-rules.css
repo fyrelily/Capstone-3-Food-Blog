@@ -1,0 +1,75 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.libre-franklin{
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gfs-didot-regular {
+    font-family: "GFS Didot", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.niconne {
+    font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body{
+    background-color: #343131;
+}
+
+.navbar, footer, div a, label, p, i, h2, ul, ol{ 
+    color: white;
+}
+
+.stat-header{
+    color:#D8A25E  !important;
+    
+}
+
+.font-18px {
+    font-size: 18px !important;
+}
+
+.navLink a{
+    text-decoration: none;
+}
+
+.font-46px{
+    font-size: 46px;
+}
+
+.font-32px, .recipe-headers{
+    font-size: 32px;
+}
+
+.font-24px {
+    font-size: 24px;
+}
+
+.font-20px, input, .stats, .stat-header{
+    font-size: 20px;
+ }
+
+.recipeName {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 80px;
+    font-weight:700;
+    color: white;   
+}
+
+.description{
+    font-size: 25px;
+}
+
+.fa-solid, .fa-regular{
+    font-size: 50px;
+}

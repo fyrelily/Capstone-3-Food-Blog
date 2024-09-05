@@ -1,0 +1,86 @@
+<%-include("partials/header.ejs")%>
+
+
+<div class="c-new-post">
+
+    <div class="c-upload-img i-upload-img">
+        <div class="i-img-form">
+            <form>
+
+            </form>
+        </div>
+
+        <div class="i-uploaded-image">
+            <img src="images/tiramasu-559179-1854652.jpg" />
+        </div>
+    </div>
+    
+    <div class="c-new-recipe i-new-recipe">
+<!-- Todo Add the remaining input fields -->
+        <% if(locals.recipe){%>
+            <h1 class="recipeName libre-franklin"> <%=recipe.recipeName%></h1>
+            <p class="description gfs-didot-regular"><%=recipe.description%></p>
+            
+            <div class="c-recipe-stats">            
+                <div class="i-recipe-stats">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="stat-header">Servings</p>
+                    <p class="stats"><%=recipe.servings%></p>
+                </div>
+
+                <div class="i-recipe-stats">
+                    <i class="fa-regular fa-clock"></i>
+                    <p class="stat-header">Prep Time</p>                    <p class="stats"><%=recipe.prepTime%></p>
+                </div>
+                
+                <div class="i-recipe-stats">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <p class="stat-header">Cook Time</p> 
+                    <p class="stats"><%=recipe.cookTime%></p>
+                </div>
+
+                <div class="i-recipe-stats">
+                    <i class="fa-solid fa-signal"></i>
+                    <p class="stat-header">Difficulty Level</p>
+                    <p class="stats"><%=recipe.difficulty%></p>
+                </div>
+            </div>
+            
+            <h2 class="recipe-headers">List of Ingredients:</h2>
+            <ul class="font-24px libre-franklin">
+                <%for (i=0; i<recipe.ingredients.length; i++){%>
+                <li><%=recipe.ingredients[i]%></li>
+                <%};%>
+            </ul>
+
+            <h2 class="recipe-headers">Cooking Instructions</h2>
+            <ol class="font-24px libre-franklin">
+                <%for (i=0; i<recipe.instructions.length; i++){%>
+                    <li><%=recipe.instructions[i]%></li>
+                    <%};%>
+            </ol>
+
+
+        <% } else { %>
+         <p>No recipe entered</p>
+        <%}%>
+
+        <form action="/newPost" method="POST">
+            <input type="submit" value="Add Another Recipe">
+        </form>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer.ejs")%>
