@@ -1,8 +1,14 @@
 <%-include("partials/header.ejs")%>
 
+<h2>Recipes</h2>
+<div>
+<%if (locals.recipeList){%>
+    <a href="/newRecipe" method="GET"><%=recipeList%></a>
 
-
-
+<%}else{%>
+    <p>No recipes on file</p>
+<%}%>
+</div>
 
 
 

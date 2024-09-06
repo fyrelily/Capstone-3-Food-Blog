@@ -15,52 +15,77 @@
     </div>
     
     <div class="c-recipe-form i-recipe-form">
+        
+        <h1 class="font-46px gfs-didot-regular">Add a New Recipe to your <span class="niconne"> Comfort Kitchen</span></h1>
+        
         <form action="/newRecipe" method="POST">
-            <div>
+
+            <div class="c-recipe-details">
+                <div class="c-flex-column">
+                    <div>
+                        <input id="recipeName" type="text"  name="recipeName" placeholder="Recipe Name">
+                    </div>
+
+                    <div>
+                        <textarea id="description" type="text"     name="description"   placeholder="Description"></textarea>
+                    </div>
+                </div>
+
+                <div class="c-new-recipe-stats">            
+                    
+                    <div class="i-recipe-stats">
+                        <input id="servings" type="text" name="servings" placeholder="Number of servings">
+                    </div>
+
+                    <div class="i-recipe-stats">
+                        <input id="prepTime" type="text" name="prepTime" placeholder="Prep Time">
+                    </div>
+
+                    <div class="i-recipe-stats">
+                        <input id="cookTime" type="text" name="cookTime" placeholder="Cooking Time">
+                    </div>
 
 
-                <input id="recipeName" type="text" name="recipeName" placeholder="Recipe Name">
+                        <div class="i-recipe-stats">
+                                <input type="radio" id="beginner" name="difficulty" value="Beginner" checked="checked">
+                                <label class="font-24px" for="beginner">Beginner</label>
+                            
+                        
+                                <input type="radio" id="intermediate" name="difficulty" value="Intermediate">
+                                <label class="font-24px" for="intermediate">Intermediate</label>
 
-                <input id="description" type="text" name="description" placeholder="Recipe Name">
+                                <input type="radio" id="advanced" name="difficulty" value="Advanced">
+                                <label class="font-24px" for="advanced">Advanced</label>
+                        </div>
+                    </div>
+                </div>
+            
+            
 
-                <input id="servings" type="text" name="servings" placeholder="Number of servings"><br/>
 
-                <input id="prepTime" type="text" name="prepTime" placeholder="Preparation Time">
+ 
 
-                <input id="cookTime" type="text" name="cookTime" placeholder="Cooking Time">
-                <br/>
+                <div id="ingredients-list">
+                    <input id="ingredTemplate" class="ingredients" type="text" name="ingredients" placeholder="Ingredient and Amount">
+                </div>
+
+                <div>
+                    <input type="button" id="more-ingredients" value="Add More">
+                </div>
 
 
-                <input type="radio" id="beginner" name="difficulty" value="Beginner" checked="checked">
-                <label for="beginner">Beginner</label>
-                
-                <input type="radio" id="intermediate" name="difficulty" value="Intermediate">
-                <label for="intermediate">Intermediate</label>
 
-                <input type="radio" id="advanced" name="difficulty" value="Advanced">
-                <label for="advanced">Advanced</label>
+
+
+                <div id="cooking-steps">
+                <input id="instruct-template" class="instructions" type="text" name="instructions" placeholder="Cooking instructions">
+                </div>
+                <div>
+                    <input type="button" id="more-instructions" value="Add More">
+                </div>
+
+                <input type="submit" value="Post Recipe">
             </div>
-
-            <div id="ingredients-list">
-                <input id="ingredTemplate" class="ingredients" type="text" name="ingredients" placeholder="Ingredient and Amount">
-             </div>
-             <div>
-                <input type="button" id="more-ingredients" value="Add More">
-            </div>
-
-
-
-
-
-            <div id="cooking-steps">
-             <input id="instruct-template" class="instructions" type="text" name="instructions" placeholder="Cooking instructions">
-            </div>
-            <div>
-                <input type="button" id="more-instructions" value="Add More">
-            </div>
-
-            <input type="submit" value="Post Recipe">
-
         </form>
 
     </div>

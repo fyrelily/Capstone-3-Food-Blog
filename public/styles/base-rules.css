@@ -25,7 +25,7 @@ body{
     background-color: #343131;
 }
 
-.navbar, footer, div a, label, p, i, h2, ul, ol{ 
+.navbar, footer, div a, label, p, i, h2, ul, ol, h1{ 
     color: white;
 }
 
@@ -51,10 +51,10 @@ body{
 }
 
 .font-24px {
-    font-size: 24px;
+    font-size: 24px ;
 }
 
-.font-20px, input, .stats, .stat-header{
+.font-20px, input, .stats, .stat-header, textarea{
     font-size: 20px;
  }
 

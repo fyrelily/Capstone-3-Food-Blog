@@ -81,18 +81,18 @@
     padding: 20px 35px;
 }
 
+.c-recipe-details{
+    display: flex;
+    max-width:100%;
+}
+
+
+
 .c-new-recipe {
     padding:20px 100px;
 }
 
-.recipeName{
-    margin-bottom: 40px; 
-} 
 
-.description {
-    margin-top: 0;
-    margin-bottom: 60px;
-}
 
 .i-recipe-form, .i-new-recipe{
     flex-basis:70%;
@@ -113,6 +113,28 @@
     border-radius: 20px;
 }
 
+.c-new-recipe-stats{
+    display: flex;
+    flex-direction: column;
+    flex-basis:35%;
+    justify-content: space-evenly;
+    border: 3px solid #D8A25E;
+    border-radius: 20px;
+    
+}
+.c-flex-column{
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.c-flex-row{
+    display: flex;
+}
+
+
 .stat-header{
     padding: 10px 0 5px 0;
 }
@@ -123,6 +145,15 @@
     flex-direction: column;
     align-items: center;
     
+}
+
+.c-radio-stats{
+    display: flex;
+    justify-content: space-around;
+}
+input[type="radio"]{
+    margin-top: 15px;
+    margin-bottom: 3px;
 }
 
 .i-recipe-stats p{
@@ -142,12 +173,30 @@ ul li {
 }
 
 #recipeName {
-    width:60%;
+    width:100%;
+    margin-bottom: 40px; 
 }
 
-#servings{
-    width:20%;
+.recipeName{
+    margin: 0px;
 }
+
+#description {
+    width:100%;
+    height: 100%;
+    margin-top: 0;
+    resize: vertical;
+}
+
+.description{
+    margin-bottom: 60px;
+}
+
+#servings, #prepTime, #cookTime{
+    width:50%;
+}
+
+
 
 .ingredients, .instructions{
     display: block;
